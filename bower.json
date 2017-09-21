@@ -1,0 +1,17 @@
+{
+  "name": "demo",
+  "homepage": "https://github.com/fangbao-0418/demo",
+  "authors": [
+    "fangbao <fangbao@wanglibank.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
