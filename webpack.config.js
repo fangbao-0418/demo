@@ -1,4 +1,5 @@
 var path = require('path');
+var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
 	entry: './src/app.js',
@@ -16,7 +17,9 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin()
   ],
   resolve: {
-
+    alias: {
+      '@': path.resolve(__dirname, 'src')
+    }
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
@@ -24,5 +27,6 @@ module.exports = {
     port: 8080,
     hot: true,
     inline: true
-  }
+  },
+  devtool: 'source-map'
 }
