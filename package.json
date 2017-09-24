@@ -1,10 +1,13 @@
 {
-  "name": "demo",
+  "name": "fangbao",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/fangbao-0418/demo.git",
-  "author": "fangbao <fangbao@wanglibank.com>",
+  "author": "fangbao <1197036595@qq.com>",
   "license": "MIT",
+  "bin": {
+    "clean": "./bin/clean.js"
+  },
   "scripts": {
     "serve": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "build": "./node_modules/webpack/bin/webpack.js"
@@ -15,5 +18,8 @@
     "rimraf": "^2.6.2",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.8.2"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }
