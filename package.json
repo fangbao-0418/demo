@@ -9,13 +9,19 @@
     "clean": "./bin/clean.js"
   },
   "scripts": {
-    "serve": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "build": "./node_modules/webpack/bin/webpack.js"
+    "serve": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "build": "node ./node_modules/webpack/bin/webpack.js"
   },
   "dependencies": {},
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "css-loader": "^0.28.7",
     "html-webpack-plugin": "^2.30.1",
     "rimraf": "^2.6.2",
+    "style-loader": "^0.18.2",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.8.2"
   },
